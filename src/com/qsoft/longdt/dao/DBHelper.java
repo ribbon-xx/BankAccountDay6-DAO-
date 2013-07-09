@@ -33,9 +33,8 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ "," + AMOUNT + " LONG," + OPEN_TIME_STAMP + " long,"
 			+ DESCRIPTION + " TEXT);";
 
-	public DBHelper(Context context, String name, CursorFactory factory,
-			int version) {
-		super(context, name, factory, version);
+	public DBHelper(Context context, String databaseName) {
+		super(context, null, null, VERSION);
 		// TODO Auto-generated constructor stub
 	}
 
